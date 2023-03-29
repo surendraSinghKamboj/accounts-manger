@@ -20,7 +20,7 @@ const Notfound = () => {
 			<main className="flex min-h-[90vh] flex-col justify-center items-center">
 				<div className="flex">
 					<CiSettings className="text-8xl mr-[-32px] text-red-700 error" />
-					<CiSettings className="text-8xl rotate-[20deg] error2" />
+					<CiSettings className="text-8xl rotate-[20deg] error error2" />
 				</div>
 				<h3 className="text-3xl">Error 404</h3>
 				<p>Page not found</p>

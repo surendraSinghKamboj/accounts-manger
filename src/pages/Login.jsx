@@ -45,7 +45,9 @@ const Login = () => {
 							type="password"
 						/>
 					</div>
-          <button className="absolute bottom-0 left-[10%] sm:left-[20%] border-2 border-blue-400 hover:bg-blue-400 hover:text-white transition-all duration-500 px-2 rounded-full">Submit</button>
+					<button className="absolute bottom-0 left-[10%] sm:left-[20%] border-2 border-blue-400 hover:bg-blue-400 hover:text-white transition-all duration-500 px-2 rounded-full">
+						Submit
+					</button>
 				</form>
 			</section>
 		</>

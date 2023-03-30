@@ -19,7 +19,7 @@ const Input = ({ type, label, name, onChange }) => {
 				className={`absolute px-2 text-sm mt-[4px] transition-all duration-500 left-2 label ${
 					isInputFocused
 						? "translate-y-[-20px] px-2 border-l-2 border-r-2 border-r-green-500 rounded-full border-l-green-500 bg-white "
-						: "translate-y-0"
+						: "translate-y-0 hidden"
 				}`}
 			>
 				{label}
@@ -31,6 +31,7 @@ const Input = ({ type, label, name, onChange }) => {
 				onBlur={handleInputBlur}
 				name={name}
 				onChange={onChange}
+				placeholder={label}
 			/>
 		</div>
 	);

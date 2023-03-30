@@ -1,9 +1,16 @@
-import React from 'react'
+import Navbar from "@/components/Navbar";
+import React from "react";
 
 const aboutus = () => {
-  return (
-    <div>aboutus</div>
-  )
-}
+	const navMenu = [
+		{ path: "/", menu: "Hompage" },
+		{ path: "/aboutus", menu: "About us" },
+		{ path: "/contactus", menu: "Contact us" },
+		{ path: "/Login", menu: "Login Now" },
+	];
+	return <>
+  <Navbar navMenu={navMenu}/>
+  </>;
+};
 
-export default aboutus
+export default aboutus;

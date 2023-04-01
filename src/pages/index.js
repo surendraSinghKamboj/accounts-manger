@@ -1,4 +1,4 @@
-import Footer from "@/components/Footer";
+
 import Navbar from "@/components/Navbar";
 import Head from "next/head";
 import Link from "next/link";
@@ -36,7 +36,7 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-			<Footer />
+		
 		</>
 	);
 }

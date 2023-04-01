@@ -20,7 +20,7 @@ const aboutus = () => {
 	return (
 		<>
 			<Navbar navMenu={navMenu} />
-			<section className="flex justify-center m-auto items-center flex-col sm:w-10/12 w-[94%]">
+			<section className="flex justify-center m-auto items-center flex-col sm:w-10/12 w-[94%]  min-h-[90vh]">
 				<h3>About Us</h3>
 				{aboutData.map((item) => (
 					<div key={useId()}>

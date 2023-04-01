@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Input from "@/components/Input";
+import Link from "next/link";
 
 const Login = () => {
 	const navMenu = [
@@ -26,7 +27,7 @@ const Login = () => {
 	return (
 		<>
 			<Navbar navMenu={navMenu} />
-			<section className="flex justify-center">
+			<section className="flex justify-center flex-col items-center min-h-[90vh]">
 				<form
 					onSubmit={handleSubmit}
 					className="relative w-full sm:w-9/12 py-9 flex justify-center items-center"
@@ -49,6 +50,9 @@ const Login = () => {
 						Submit
 					</button>
 				</form>
+				<p>
+					New user <Link href="/Signup"><span className="text-blue-700">Create account</span></Link>
+				</p>
 			</section>
 		</>
 	);

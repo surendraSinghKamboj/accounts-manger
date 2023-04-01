@@ -1,3 +1,5 @@
+import Clients from "@/components/Clients";
+import Sellers from "@/components/Sellers";
 import React, { useState } from "react";
 
 const create = () => {
@@ -16,7 +18,9 @@ const create = () => {
 					} bg-slate-800`}
 				></div>
 			</div>
-			<div className="min-h-[90vh]">{client ? <>Clients</> : <>Sellers</>}</div>
+			<div className="min-h-[90vh]">
+				{client ? <Clients></Clients> : <Sellers></Sellers>}
+			</div>
 		</>
 	);
 };
